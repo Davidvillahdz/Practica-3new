@@ -1,7 +1,11 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package Vista;
 
 import Modelo.Cancion;
+import Modelo.Compositor;
 import java.util.Scanner;
 
 /**
@@ -9,12 +13,12 @@ import java.util.Scanner;
  * @author HP
  */
 public class VistaCancion {
-    private Scanner entrada;
-
+  private Scanner entrada;
+    
     public VistaCancion() {
         entrada = new Scanner(System.in);
     }
-    
+   
     public Cancion mostrarTitulo() {
         entrada = new Scanner(System.in);
         System.out.println("Ingresa los datos de la cancion");
@@ -49,10 +53,8 @@ public class VistaCancion {
         int codigo = entrada.nextInt();
         return codigo;
     }
-    
-    public void imCancion(){
-        Cancion c = new Cancion();
-        c.toString();
+    public void verCompositor(Compositor compositor) {
+        System.out.println("Datos del compositor: " + compositor);
     }
-    
+
 }

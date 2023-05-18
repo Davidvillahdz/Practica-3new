@@ -1,9 +1,6 @@
 
-package ec.edu.ups.clases.Modelo;
+package Modelo;
 
-import Modelo.Cancion;
-import Modelo.Cantante;
-import Modelo.Persona;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -97,4 +94,10 @@ public class Compositor extends Persona{
     public List<Cancion> buscarNombreDeCancion(String titulo) {
         return cancionesTop100billboard.stream().filter(e -> e.getTitulo().startsWith(titulo)).collect(Collectors.toList());
     }
+
+    @Override
+    public String toString() {
+        return "Compositor{" + "numeroDeComposiciones=" + numeroDeComposiciones + ", cancionesTop100billboard=" + cancionesTop100billboard + ", Clientes=" + Clientes + '}';
+    }
+    
 }

@@ -5,6 +5,12 @@ import Modelo.Disco;
 import java.util.Scanner;
 
 public class VistaDisco {
+
+    public static int readcodigo() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    
     private Scanner entrada;
 
     public VistaDisco() {
@@ -45,8 +51,8 @@ public class VistaDisco {
         int codigo = entrada.nextInt();
         return codigo;
     }
-    public void imDisco(){
-        Disco c = new Disco();
-        c.toString();
+    public void imVistaDisco(){
+        Disco d = new Disco();
+        d.toString();
     }
 }

@@ -3,9 +3,7 @@ package Vista;
 
 import Controlador.ControladorPersona;
 import Modelo.Cantante;
-
-
-import ec.edu.ups.clases.Modelo.Compositor;
+import Modelo.Compositor;
 import java.util.Scanner;
 
 /**
@@ -28,7 +26,7 @@ public class VistaGeneral {
                     break;
                 case 3:
                 VistaCantante vistaCantante = new VistaCantante();
-                vistaCantante.imCantante();
+                vistaCantante.idCantante();
 
                 case 4:
                 VistaCompositor vistaCompositor = new VistaCompositor();
@@ -36,7 +34,7 @@ public class VistaGeneral {
 
                 case 5:
                 Cantante vistaCantante1 = new Cantante();
-                Compositor compositor = new Compositor();
+                    Compositor compositor = new Compositor();
                 compositor.agregarCliente(vistaCantante1);
 
                 case 6:

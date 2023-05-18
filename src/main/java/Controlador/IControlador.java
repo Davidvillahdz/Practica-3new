@@ -12,8 +12,6 @@ import Modelo.Persona;
  */
 public interface IControlador {
 
-    public int MAX_OBJECTS = 10;
-
     public abstract void create(Persona obj); //C
  
     public abstract Persona read(Persona obj); //R

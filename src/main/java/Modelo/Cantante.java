@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 
 
 public class Cantante extends Persona {
+
+    
     private String nombreArtistico;
     private String generoMusical;
     private int numeroDeSencillos;
@@ -127,18 +129,22 @@ public class Cantante extends Persona {
     public void agregarDisco(Disco disco) {
         discografia.add(disco);
     }
-
-    @Override
-    public String toString(){
-        return "Cantante{" + "nombreArtistico=" + nombreArtistico + ", generoMusical=" + generoMusical + ", numeroDeSencillos=" + numeroDeSencillos + ", numeroDeConciertos=" + numeroDeConciertos + ", numeroDeGiras=" + numeroDeGiras + ", discografia=" + discografia + '}';
-    }            
-
     public void buscarNombreDeCancion(String tituloCancion) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+ 
+    @Override
+    public String toString(){
+        return "Cantante{" + "nombreArtistico=" + nombreArtistico + ", generoMusical=" + generoMusical + ", numeroDeSencillos=" + numeroDeSencillos + ", numeroDeConciertos=" + numeroDeConciertos + ", numeroDeGiras=" + numeroDeGiras + ", discografia=" + discografia + '}';
+    }               
 
-    
-   
+    public void eliminarDisco(Disco disco) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void eliminarDisco(int idDisco) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 
     

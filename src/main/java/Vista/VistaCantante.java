@@ -3,57 +3,83 @@ package Vista;
 
 
 import Modelo.Cantante;
+import Modelo.Disco;
 import java.util.Scanner;
 
 public class VistaCantante {
+
+    public static int readId() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     private Scanner entrada;
 
     public VistaCantante() {
-        this.entrada = new Scanner(System.in);
+        entrada = new Scanner(System.in);
+    }
+    
+    public Disco mostrarTitulo() {
+        entrada = new Scanner(System.in);
+        System.out.println("Ingresa los datos de la disco");
+        int codigo = entrada.nextInt();
+        String nombredisco = entrada.next();
+        int anioDeLanzamiento = entrada.nextInt();
+        return new Disco( codigo, nombredisco, anioDeLanzamiento );
+    }
+
+    public Disco actualizardisco() {
+        entrada = new Scanner(System.in);
+        System.out.println("Ingresa el codigo de la direccion a actualizar");
+        int codigo = entrada.nextInt();
+        System.out.println("Ingrese los nuevos Datos ");
+        String nombredisco = entrada.next();
+        int anioDeLanzamiento = entrada.nextInt();
+        return new Disco( codigo, nombredisco, anioDeLanzamiento );
+    }
+
+    public Disco eliminarDisco() {
+        entrada = new Scanner(System.in);
+        System.out.println("Ingresa el codigo del disco a eliminar");
+        int codigo = entrada.nextInt();
+        return new Disco(codigo, null, codigo);
+    }
+
+    public int buscarDisco() {
+        entrada = new Scanner(System.in);
+        System.out.println("Ingresa el codigo de la cancion a buscar");
+        int codigo = entrada.nextInt();
+        return codigo;
+    }
+    
+    public void imDisco(){
+        Disco d = new Disco();
+        d.toString();
     }
 
     public Cantante ingresarCantante() {
-        entrada = new Scanner(System.in);
-        System.out.println("Ingrese el codigo del cantante: ");
-        int codigo = entrada.nextInt();
-
-        System.out.println("Ingrese el nombre del cantante: ");
-        String nombre = entrada.next();
-
-        System.out.println("Ingrese el apellido del cantante: ");
-        String apellido = entrada.next();
-
-        System.out.println("Ingrese la edad del cantante: ");
-        int edad = entrada.nextInt();
-
-        System.out.println("Ingrese la nacionalidad del cantante: ");
-        String nacionalidad = entrada.next();
-
-        System.out.println("Ingrese el salario del cantante: ");
-        double salario = entrada.nextDouble();
-
-        System.out.println("Ingresa el nombre artistico del cantante: ");
-        String nombreArtistico = entrada.next();
-
-        System.out.println("Ingrese el genero muscial del cantante: ");
-        String generoMusical = entrada.next();
-
-        System.out.println("Ingrese l numero de sencillos del cantante: ");
-        int numeroDeSencillos = entrada.nextInt();
-
-        System.out.println("Ingrese el numero de conciertos del cantante: ");
-        int numeroDeConciertos = entrada.nextInt();
-
-        System.out.println("Ingres el numero de giras del cantante: ");
-        int numeroDeGiras = entrada.nextInt();
-
-        System.out.println("Ingrese la discografia del cantante: ");
-
-        return new Cantante(nombreArtistico, generoMusical, numeroDeSencillos, numeroDeConciertos, numeroDeGiras, codigo, nombre, apellido, edad, nacionalidad, salario);
-
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-   public void imCantante(){
-        Cantante c = new Cantante();
-        c.toString();
+
+    public int buscarCantante() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void verCantante(Cantante cantante) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public Cantante actualizarCantante() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public Cantante eliminarCantante() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void imCantante() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void idCantante() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
