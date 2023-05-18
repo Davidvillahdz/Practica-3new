@@ -1,0 +1,15 @@
+Vista\VistaCompositor.class
+Vista\VistaGeneral.class
+ec\edu\ups\clases\Modelo\Compositor.class
+Vista\VistaCancion.class
+Controlador\IControlador.class
+Dao\CompositorDAO.class
+Modelo\Cantante.class
+Controlador\ControladorPersona.class
+Dao\CantanteDAO.class
+Modelo\Cancion.class
+Vista\VistaCantante.class
+ec\edu\ups\clases\practica2\villadavid\diazedisson\Principal.class
+Vista\VistaDisco.class
+Modelo\Disco.class
+Modelo\Persona.class
